@@ -3,7 +3,7 @@ FROM anapsix/alpine-java:jdk
 # Configuration variables
 ENV BITBUCKET_HOME     /var/atlassian/bitbucket
 ENV BITBUCKET_INSTALL  /opt/atlassian/bitbucket
-ENV BITBUCKET_VERSION  4.3.1
+ENV BITBUCKET_VERSION  4.3.2
 
 # Install Atlassian BitBucket and helper tools
 
