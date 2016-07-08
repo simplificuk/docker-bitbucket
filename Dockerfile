@@ -14,6 +14,7 @@ RUN	apk --update add curl tar git perl \
 	&& curl -Ls "https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.36.tar.gz" | tar -xz --directory "${BITBUCKET_INSTALL}/lib" --strip-components=1 --no-same-owner "mysql-connector-java-5.1.36/mysql-connector-java-5.1.36-bin.jar"
 
 EXPOSE 7990
+EXPOSE 7999
 
 VOLUME ${BITBUCKET_HOME}
 
