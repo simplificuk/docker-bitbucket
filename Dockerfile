@@ -16,6 +16,8 @@ RUN	apk --update add curl tar git perl \
 EXPOSE 7990
 EXPOSE 7999
 
+USER daemon:daemon
+
 VOLUME ${BITBUCKET_HOME}
 
 WORKDIR ${BITBUCKET_HOME}
